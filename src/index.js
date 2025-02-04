@@ -1,6 +1,10 @@
+let vitorias = 45;
+let derrotas = 17;
+
+calcularNivel(vitorias, derrotas);
 
 function calcularNivel(vitorias, derrotas) {
-    let saldoVitorias = 45 - 17;
+    let saldoVitorias = vitorias - derrotas;
     let nivel = "";
 
     if (saldoVitorias < 10) {
@@ -21,6 +25,3 @@ function calcularNivel(vitorias, derrotas) {
 
     console.log("O Herói tem um saldo de " + saldoVitorias + " está no nível de " + nivel);
 }
-
-// Exemplo de uso
-calcularNivel(45, 17);
